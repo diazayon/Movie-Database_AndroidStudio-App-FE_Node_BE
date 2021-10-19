@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">USC Films</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search">Search</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="open_in_tmdb">Open in TMDB</string>
+    <string name="share_on_facebook">Share on Facebook</string>
+    <string name="share_on_twitter">Share on Twitter</string>
+    <string name="add_to_watchlist">Add to Watchlist</string>
+    <string name="USC_Films">USC Films</string>
+    <string name="title">Title</string>
+    <string name="remove_to_watchlist">remove_to_watchlist</string>
+</resources>
