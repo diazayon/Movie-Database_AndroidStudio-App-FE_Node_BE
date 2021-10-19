@@ -119,7 +119,7 @@ public class HomeFragment extends Fragment {
         loadingDialog.startLoadingDialog();
 
 
-        String url1 ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/movies/trending";
+        String url1 ="http://localhost:8080/movies/trending";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url1, null, new Response.Listener<JSONArray>() {
             @Override
@@ -179,7 +179,7 @@ public class HomeFragment extends Fragment {
         });
         queue.add(jsonArrayRequest);
 
-        String url2 ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tv/trending";
+        String url2 ="http://localhost:8080/tv/trending";
 
         JsonArrayRequest jsonArrayRequesttv = new JsonArrayRequest(Request.Method.GET, url2, null, new Response.Listener<JSONArray>() {
             @Override
@@ -238,7 +238,7 @@ public class HomeFragment extends Fragment {
         queue.add(jsonArrayRequesttv);
 
 
-        String url3 ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/movies/toprated";
+        String url3 ="http://localhost:8080/movies/toprated";
 
         JsonArrayRequest jsonArrayRequestmovietop = new JsonArrayRequest(Request.Method.GET, url3, null, new Response.Listener<JSONArray>() {
             @Override
@@ -269,7 +269,7 @@ public class HomeFragment extends Fragment {
         });
         queue.add(jsonArrayRequestmovietop);
 
-        String url4 ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/movies/popular";
+        String url4 ="http://localhost:8080/movies/popular";
 
         JsonArrayRequest jsonArrayRequestmoviepop = new JsonArrayRequest(Request.Method.GET, url4, null, new Response.Listener<JSONArray>() {
             @Override
@@ -299,7 +299,7 @@ public class HomeFragment extends Fragment {
         });
         queue.add(jsonArrayRequestmoviepop);
 
-        String url5 ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tv/toprated";
+        String url5 ="http://localhost:8080/tv/toprated";
 
         JsonArrayRequest jsonArrayRequesttvtop = new JsonArrayRequest(Request.Method.GET, url5, null, new Response.Listener<JSONArray>() {
             @Override
@@ -329,7 +329,7 @@ public class HomeFragment extends Fragment {
         });
         queue.add(jsonArrayRequesttvtop);
 
-        String url6 ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tv/popular";
+        String url6 ="http://localhost:8080/tv/popular";
 
         JsonArrayRequest jsonArrayRequesttvpop = new JsonArrayRequest(Request.Method.GET, url6, null, new Response.Listener<JSONArray>() {
             @Override

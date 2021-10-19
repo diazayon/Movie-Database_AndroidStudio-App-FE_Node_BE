@@ -140,7 +140,7 @@ public class detailspage extends AppCompatActivity {
 
     private void castTV(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tvdetails/cast/" + itemID;
+        String url ="http://localhost:8080/tvdetails/cast/" + itemID;
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -173,7 +173,7 @@ public class detailspage extends AppCompatActivity {
 
     private void cast(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/moviedetails/cast/" + itemID;
+        String url ="http://localhost:8080/moviedetails/cast/" + itemID;
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -213,7 +213,7 @@ public class detailspage extends AppCompatActivity {
 
     private void pickstv(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tvdetails/rec/" + itemID;
+        String url ="http://localhost:8080/tvdetails/rec/" + itemID;
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -257,7 +257,7 @@ public class detailspage extends AppCompatActivity {
 
     private void revtv(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tvdetails/rev/" + itemID;
+        String url ="http://localhost:8080/tvdetails/rev/" + itemID;
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -293,7 +293,7 @@ public class detailspage extends AppCompatActivity {
 
     private void vidtv(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tvdetails/vid/" + itemID;
+        String url = "http://localhost:8080/tvdetails/vid/" + itemID;
 
         JsonObjectRequest jsonArrayRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -327,7 +327,7 @@ public class detailspage extends AppCompatActivity {
 
     private void dettv(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://dda571hw9backend.us-west-1.elasticbeanstalk.com/tvdetails/det/" + itemID;
+        String url = "http://localhost:8080/tvdetails/det/" + itemID;
         loadingDialog loadingDialog = new loadingDialog(this);
         loadingDialog.startLoadingDialog();
 
@@ -390,7 +390,7 @@ public class detailspage extends AppCompatActivity {
 
     private void picks(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/moviedetails/rec/" + itemID;
+        String url ="http://localhost:8080/moviedetails/rec/" + itemID;
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -433,7 +433,7 @@ public class detailspage extends AppCompatActivity {
 
     private void rev(String itemID) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/moviedetails/rev/" + itemID;
+        String url ="http://localhost:8080/moviedetails/rev/" + itemID;
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -477,7 +477,7 @@ public class detailspage extends AppCompatActivity {
 
     private void vid(String id) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://dda571hw9backend.us-west-1.elasticbeanstalk.com/moviedetails/vid/" + id;
+        String url = "http://localhost:8080/moviedetails/vid/" + id;
 
         JsonObjectRequest jsonArrayRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -511,7 +511,7 @@ public class detailspage extends AppCompatActivity {
 
     private void det(String id) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://dda571hw9backend.us-west-1.elasticbeanstalk.com/moviedetails/det/" + id;
+        String url = "http://localhost:8080/moviedetails/det/" + id;
         loadingDialog loadingDialog = new loadingDialog(this);
         loadingDialog.startLoadingDialog();
 

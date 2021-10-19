@@ -50,7 +50,7 @@ public class NotificationsFragment extends Fragment {
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleCallback);
         itemTouchHelper.attachToRecyclerView(watchlistview);
 
-        String url3 ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/movies/trending";
+        String url3 ="http://localhost:8080/movies/trending";
         RequestQueue queue = Volley.newRequestQueue(getActivity().getApplicationContext());
 
         JsonArrayRequest jsonArrayRequestmovietop = new JsonArrayRequest(Request.Method.GET, url3, null, new Response.Listener<JSONArray>() {

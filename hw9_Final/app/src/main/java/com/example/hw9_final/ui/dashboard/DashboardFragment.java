@@ -38,7 +38,7 @@ import java.util.ArrayList;
 
 public class DashboardFragment extends Fragment {
     private ArrayList<reclyclerViewData> searchresults;
-    private String url ="http://dda571hw9backend.us-west-1.elasticbeanstalk.com/query/";
+    private String url ="http://localhost:8080/query/";
 
     private DashboardViewModel dashboardViewModel;
 
